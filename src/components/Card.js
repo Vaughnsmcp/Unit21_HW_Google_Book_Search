@@ -1,10 +1,10 @@
-import React from "react"
+import React from "react";
 
-function Card ({icon, title, children}){
+function Card({ icon, title, children }) {
 
     return (
 
-        <div className = "">
+        <div className="col-md">
 
             <div>
 
@@ -23,4 +23,4 @@ function Card ({icon, title, children}){
     )
 }
 
-export default Card
+export default Card;
