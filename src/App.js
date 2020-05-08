@@ -14,7 +14,7 @@ function App() {
       <Switch>
 
       
-      <Route exact path="/" component={Home}/>
+      <Route component={Home}/>
       {/* <Route exact path="/saved" component={Save}/> */}
       </Switch>
       </div>

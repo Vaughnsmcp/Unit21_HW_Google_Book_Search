@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 
-import {Link} from "react-router-dom"
+import {Link, NavLink} from "react-router-dom"
 
 class NavBar extends Component {
 
@@ -10,8 +10,12 @@ class NavBar extends Component {
     render(){
         return (
             
-                <Link to = "/"> bookSearch
-                </Link>
+                <NavLink acitiveClassName = "active"
+                
+                isActive={()=>window.location.pathname==="/home"}
+                to="/"
+                > bookSearch
+                </NavLink>
         
         )
     }
