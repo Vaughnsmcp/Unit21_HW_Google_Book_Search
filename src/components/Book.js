@@ -1,32 +1,29 @@
-import React from "react";
+import React from "react"
 
-function Book(props) {
+import { Row, Column, Container } from "./Grids"
 
+import { ListItem } from "./List"
+
+function Book({ author, title, description, image, link }) {
     return (
+        <ListItem>
+            <Row>
+                <Column>
+                    <h2>{title}</h2>
+                    <h3>{link}</h3>
+                </Column>
+                <Column>
+                    <img src={image} alt={title} />
+                </Column>
+                <Column>
+                    <p>{author}</p>
+                </Column>
+                <Column>
+                    <p>{description}</p>
+                </Column>
+            </Row>
+        </ListItem>
 
-        <div className="card mb-3">
-            <div className="row no-gutters">
-                <div className="col">
-                <img src={props.thumbnail} className="card-img" alt={props.title} style={{ width: "300px" }} />
-
-
-            </div>
-            <div className="col-md-8">
-                <div className="card-body">
-                    <h4 className="card-title">{proprs.title}</h4>
-                    <p className="card-text">Written By: {props.author}</p>
-                    <p className="card-text">Description: {props.description}</p>
-                </div>
-
-                <a href={props.href} target="_blank" className="btn btn-primary" role="button">View</a>{window.location.pathname === "/" ?
-                    <span data-index={props.index} className="save btn btn-success" onClick={props.save}>Save</span>
-
-                    <span data-index={props.index} className="delete btn btn-danger" onClick={props.delete}>Delete</span>
-    }
-            </div>
-        </div>
-        </div>
-    );
+    )
 }
-
-export default Book;
+export default Book

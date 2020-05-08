@@ -1,22 +1,26 @@
-import React from "react";
+import React from "react"
 
 function Card({ icon, title, children }) {
 
     return (
 
-        <div className="col-md">
+        <div className="container mt-3">
 
-            <div>
+            <div className="card" style={{ width: "100" }}>
 
-                <h2>
-                    {title}
-                </h2>
 
-                <div>
-                    {children}
+                <div className="card">
 
+
+                    <h2 className={"fa fa-${icon}"}>
+                        {title}
+                    </h2>
+
+                    <div>
+                        {children}
+
+                    </div>
                 </div>
-
             </div>
 
         </div>
