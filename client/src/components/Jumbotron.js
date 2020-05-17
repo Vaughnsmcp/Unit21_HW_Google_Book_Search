@@ -1,4 +1,4 @@
-import React from "React"
+import React from "react"
 
 function Jumbotron({children})
 {return <div className = "jumbotron">{children}</div>}

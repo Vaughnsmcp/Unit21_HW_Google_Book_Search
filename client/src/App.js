@@ -1,8 +1,8 @@
-import React from '../node_modules/@types/react';
-import logo from './logo.svg';
-import Footer from './components/Footer'
+import React from 'react';
+// import logo from '../logo.svg';
+// import Footer from '../components/Footer'
 import './App.css';
-import { Router, Route, Switch } from "../node_modules/react-router-dom"
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import NavBar from './components/Navbar'
 import Home from './pages/Home'
 
@@ -14,7 +14,7 @@ function App() {
         <Switch>
 
 
-          <Route component={Home} />
+          <Route component={Home} path="/" />
           {/* <Route exact path="/saved" component={Save}/> */}
         </Switch>
       </div>
