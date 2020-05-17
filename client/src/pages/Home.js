@@ -43,7 +43,7 @@ function Home() {
     return (
         <>
 
-        <Header />
+        <Header/>
         <form className="form-group">
             <h1>What shall we read today, fellow scholar?</h1>
             <input className="form-control form-control-lg"
