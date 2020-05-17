@@ -1,12 +1,25 @@
-//This is where we add components handleInputChange, handleFormSubmit, get books, handle save books
-import React from "react";
+
+import React, { useState } from "react";
 import Header from "../components/Header";
 
 function Home() {
+    let [scholarSearch, setScholarSearch] = useState("");
+    let [scholarResult, setScholarResult] = useState([]);
+    const handleFormSubmit = event => {
+        event.preventDefault();
+        API.searchResults(scholarSearch).then(res=>{
+            console.log(res);
+            setScholarResult(res.data.items);
+        })
+        .catch(err=>{
+            throw err;
+        });
+    }
+
     return (
-        <div>
+       
             <Header />
-        </div>
+       
         )
        
 }
