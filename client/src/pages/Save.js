@@ -4,10 +4,9 @@ import Header from "../components/Header";
 import Card from "../components/Card";
 
 function Save() {
-    let [scholarResult, setScholarResult] = useState
-        ();
+    const [scholarResult, setScholarResult] = useState([]);
     function getchaBooks() {
-        API.getBooks().then(res => {
+        API.getSavedBooks().then(res => {
             setScholarResult(res.data)
         })
     }
@@ -22,6 +21,7 @@ function Save() {
                 throw err;
             })
     }
+    console.log(scholarResult)
     return (
         <>
             <Header />

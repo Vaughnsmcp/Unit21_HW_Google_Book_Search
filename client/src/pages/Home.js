@@ -29,7 +29,7 @@ function Home() {
                 link: book.volumeInfo.infoLink
 
             })
-                .then(() => setScholarResult())
+                .then(() => console.log("You've successfully saved a book!"))
                 .catch(err => {
                     throw err;
 
@@ -66,7 +66,7 @@ function Home() {
                         link={book.volumeInfo.infoLink}
                         onClick={favoriteBooks}
                         book={book}
-                        key={book.volumeInfo.infoLink}
+                        key={book.id}
                         message={"Good Read!"} />
 
                 ))}
