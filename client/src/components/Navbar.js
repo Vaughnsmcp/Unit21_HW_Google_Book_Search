@@ -1,26 +1,32 @@
-import React, { Component } from "react"
+import React from "react";
 
-import {Link, NavLink} from "react-router-dom"
+import { Link } from "react-router-dom";
 
-class NavBar extends Component {
+function NavBar (){
 
-    // componentDidMount(){
-
-    // }
-    render(){
+   
         return (
             
-                <NavLink acitiveClassName = "active"
-                
-                isActive={()=>window.location.pathname==="/home"}
-                to="/"
-                > bookSearch
-                </NavLink>
-        
+                <ul className ="nav nav-pills nav-fill">
+                    <li className="nav-item">
+                        <Link
+                        to="/"
+                        className={window.location.pathname === `/` ? ` nav-link active` : `nav-link`}>
+                            Chip, chip, my good fellow!
+                        </Link>
+                        </li>
+                        <li className="nav-item">
+                        <Link
+                        to="/save"
+                        className={window.location.pathname === `/save` ? ` nav-link active` : `nav-link`}>
+                            Cheerio!!
+                        </Link>
+                        </li>
+                        </ul>
         )
     }
-}
 
 
-export default NavBar
+
+export default NavBar;
 

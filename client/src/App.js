@@ -1,26 +1,23 @@
 import React from 'react';
-// import logo from '../logo.svg';
-// import Footer from '../components/Footer'
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import NavBar from './components/Navbar'
 import Home from './pages/Home'
+import Save from './pages/Save'
 
 function App() {
   return (
     <Router>
       <div>
-        <NavBar />
+        <NavBar/>
         <Switch>
-
-
-          <Route component={Home} path="/" />
-          {/* <Route exact path="/saved" component={Save}/> */}
+          <Route exact path="/" component={Home} />
+          <Route exact path="/save" component={Save} />
         </Switch>
       </div>
     </Router>
 
-    // {/* <Footer></Footer> */}
+
   );
 }
 
