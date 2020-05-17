@@ -12,14 +12,14 @@ function NavBar (){
                         <Link
                         to="/"
                         className={window.location.pathname === `/` ? ` nav-link active` : `nav-link`}>
-                            Chip, chip, my good fellow!
+                            Search Literature
                         </Link>
                         </li>
                         <li className="nav-item">
                         <Link
                         to="/save"
                         className={window.location.pathname === `/save` ? ` nav-link active` : `nav-link`}>
-                            Cheerio!!
+                            Save Literature
                         </Link>
                         </li>
                         </ul>

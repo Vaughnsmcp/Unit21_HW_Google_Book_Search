@@ -1,12 +1,10 @@
 import axios from "axios"
 
 export default {
-    getBooks: function (q){
-        return axios.get("/api/google",{
-            params: {
+    getBooks: function (query){
+        return axios.get(`https://www.googleapis.com/books/v1/volumes?q=intitle:${query}&maxResults=40`)
 
-            q:"title"+q}
-        })
+
     },
 
 
