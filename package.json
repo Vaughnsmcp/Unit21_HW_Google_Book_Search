@@ -10,10 +10,10 @@
     "client": "cd client && npm run start",
     "install": "cd client && npm install",
     "build": "cd client && npm run build",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "heroku-postbuild": "npm run build"
   },
-  "author": "Vaughn McPherson",
-  "license": "MIT",
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
     "concurrently": "^5.1.0",
     "nodemon": "^2.0.2"
