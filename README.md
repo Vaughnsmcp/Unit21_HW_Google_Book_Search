@@ -14,6 +14,9 @@ _This app allows the user to browse all the literatue on the interwebs. One may 
 ## Known Bugs
 _No known bugs._
 
+## Heroku Deployment
+_https://serene-hamlet-07214.herokuapp.com/_
+
 
 ## Technologies Used
 * _JavaScript_
